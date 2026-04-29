@@ -1,0 +1,24 @@
+<mat-card class="transaction-card" role="article" aria-label="Credit card transaction">
+  <mat-card-header>
+    <mat-card-subtitle>{{ transaction().cardNumber }}</mat-card-subtitle>
+    <mat-card-title>{{ transaction().merchantName }}</mat-card-title>
+  </mat-card-header>
+
+  <mat-card-content>
+    <p class="product-details">{{ transaction().productDetails }}</p>
+    <p>
+      <strong>{{ 'transactions.totalInstallments' | translate }}:</strong>
+      {{ transaction().totalInstallments }}
+    </p>
+    <p>
+      <strong>{{ 'transactions.schedule' | translate }}:</strong>
+      {{ transaction().schedule }}
+    </p>
+  </mat-card-content>
+
+  <mat-card-footer class="transaction-footer">
+    <span>{{ transaction().transactionDate | date: 'mediumDate' }}</span>
+    <span>{{ transaction().amount | currency: transaction().currency : 'symbol' : '1.2-2' }}</span>
+    <span>{{ transaction().currency }}</span>
+  </mat-card-footer>
+</mat-card>

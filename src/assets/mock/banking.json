@@ -1,0 +1,37 @@
+{
+  "transactions": [
+    {
+      "id": "tx-001",
+      "cardNumber": "**** **** **** 4567",
+      "merchantName": "Amazon",
+      "productDetails": "Wireless Headphones",
+      "totalInstallments": 6,
+      "schedule": "Monthly",
+      "transactionDate": "2025-06-11T00:00:00.000Z",
+      "amount": 259.9,
+      "currency": "USD"
+    },
+    {
+      "id": "tx-002",
+      "cardNumber": "**** **** **** 4567",
+      "merchantName": "Apple Store",
+      "productDetails": "iPad Air",
+      "totalInstallments": 12,
+      "schedule": "Monthly",
+      "transactionDate": "2025-03-04T00:00:00.000Z",
+      "amount": 899,
+      "currency": "USD"
+    },
+    {
+      "id": "tx-003",
+      "cardNumber": "**** **** **** 9821",
+      "merchantName": "LATAM Airlines",
+      "productDetails": "Lima - Madrid Flight",
+      "totalInstallments": 3,
+      "schedule": "Monthly",
+      "transactionDate": "2025-01-26T00:00:00.000Z",
+      "amount": 1340.75,
+      "currency": "EUR"
+    }
+  ]
+}

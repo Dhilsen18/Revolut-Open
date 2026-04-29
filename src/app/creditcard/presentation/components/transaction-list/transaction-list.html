@@ -1,0 +1,19 @@
+<section class="transactions-wrapper" aria-live="polite">
+  <h1>{{ 'transactions.title' | translate }}</h1>
+
+  @if (isLoading()) {
+    <div class="centered-message">
+      <mat-spinner diameter="42" aria-label="Loading transactions"></mat-spinner>
+    </div>
+  } @else if (hasError()) {
+    <p class="centered-message">{{ 'transactions.error' | translate }}</p>
+  } @else if (transactions().length === 0) {
+    <p class="centered-message">{{ 'transactions.empty' | translate }}</p>
+  } @else {
+    <div class="transactions-grid" role="list" aria-label="Credit card transactions list">
+      @for (transaction of transactions(); track transaction.id) {
+        <app-transaction-card [transaction]="transaction" />
+      }
+    </div>
+  }
+</section>

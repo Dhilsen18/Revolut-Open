@@ -1,59 +1,42 @@
-# Open2
+# Revolut Open Banking - Credit Card Transactions
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.8.
+This Angular application consumes transaction data and displays a clean Open Banking dashboard using Angular Material cards.  
+It follows a layered and component-based architecture with sub-domains (`shared` and `creditcard`), Angular Signals for state, and `@ngx-translate` for EN | ES internationalization.
 
-## Development server
+## Stack
 
-To start a local development server, run:
+- Angular 21 (standalone components)
+- Angular Material
+- TypeScript
+- HttpClient
+- Angular Signals
+- `@ngx-translate/core` + `@ngx-translate/http-loader`
 
-```bash
-ng serve
-```
+## Features
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- Toolbar with Revolut logo, title, and language toggle EN | ES
+- Main section with `Credit Card Transactions` title
+- Transaction cards including card number, merchant, product detail, installments, schedule, date, amount, and currency
+- Footer with copyright and developer information
+- Accessibility basics: alt text, ARIA labels, semantic structure
+- Fallback data flow from `assets/mock/banking.json` if endpoint is unavailable
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
+## Run
 
 ```bash
-ng build
+npm install
+npm start
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Open `http://localhost:4200`.
 
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+## Build
 
 ```bash
-ng test
+npm run build
 ```
 
-## Running end-to-end tests
+## Author
 
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- Code: `u202300000`
+- Name: `Dilsen Lastname`

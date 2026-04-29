@@ -1,0 +1,16 @@
+{
+  "toolbar": {
+    "title": "Revolut Open Banking"
+  },
+  "transactions": {
+    "title": "Transacciones de Tarjeta de Credito",
+    "totalInstallments": "Cuotas Totales",
+    "schedule": "Cronograma",
+    "empty": "No hay transacciones disponibles.",
+    "error": "No se pudo cargar la informacion."
+  },
+  "footer": {
+    "copyright": "Copyright © 2025 Revolut Open Banking. All rights reserved.",
+    "developedBy": "Desarrollado por"
+  }
+}

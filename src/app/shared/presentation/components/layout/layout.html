@@ -1,0 +1,21 @@
+<div class="layout-container">
+  <mat-toolbar role="banner" aria-label="Main toolbar">
+    <div class="toolbar-left">
+      <img
+        [src]="logoUrl"
+        alt="Revolut logo"
+        class="toolbar-logo"
+        aria-label="Revolut logo image"
+      />
+      <span>{{ 'toolbar.title' | translate }}</span>
+    </div>
+    <div class="toolbar-spacer"></div>
+    <app-language-switcher />
+  </mat-toolbar>
+
+  <main class="layout-content">
+    <app-transaction-list />
+  </main>
+
+  <app-footer />
+</div>

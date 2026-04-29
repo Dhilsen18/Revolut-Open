@@ -1,0 +1,16 @@
+{
+  "toolbar": {
+    "title": "Revolut Open Banking"
+  },
+  "transactions": {
+    "title": "Credit Card Transactions",
+    "totalInstallments": "Total Installments",
+    "schedule": "Schedule",
+    "empty": "No transactions available.",
+    "error": "The information could not be loaded."
+  },
+  "footer": {
+    "copyright": "Copyright © 2025 Revolut Open Banking. All rights reserved.",
+    "developedBy": "Developed by"
+  }
+}
